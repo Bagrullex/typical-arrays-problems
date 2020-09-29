@@ -25,3 +25,18 @@ const max = (coll) => {
   
     return max;
   };
+
+const avg = (coll) => {
+  const count = coll.length;
+
+  if (count === 0) {
+    return null;
+  }
+
+  let sum = 0;
+  for (const item of coll) {
+    sum += item;
+  }
+
+  return sum / count;
+};
